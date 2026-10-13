@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #101c3a;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #58c4ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #58c4ff;
+}
+
+/* Home section */
+.hero {
+    min-height: 75vh;
+    background: linear-gradient(135deg, #101c3a, #164e80);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    color: #58c4ff;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #58c4ff;
+    color: #101c3a;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* General sections */
+section:not(.hero) {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #101c3a;
+    margin-bottom: 25px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: white;
+    padding: 18px 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+/* Projects */
+.project-card {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.project-card h3 {
+    color: #164e80;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #101c3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
